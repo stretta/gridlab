@@ -38,6 +38,35 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-219",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 320.0, 1724.633789, 110.0, 20.0 ],
+					"style" : "",
+					"text" : "s ---[monome]oscout"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-215",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 320.0, 1693.0, 138.0, 20.0 ],
+					"style" : "",
+					"text" : "prepend /gome/grid/led/set"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-6",
@@ -859,21 +888,6 @@
 					"patching_rect" : [ 210.093262, 1554.887817, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "r ---_edit_mode"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 0.896739, 0.090083, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-150",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 286.343262, 1664.125366, 55.0, 22.0 ],
-					"style" : "",
-					"text" : "s ---_led"
 				}
 
 			}
@@ -2226,7 +2240,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-150", 0 ],
+					"destination" : [ "obj-215", 0 ],
 					"source" : [ "obj-148", 0 ]
 				}
 
@@ -2270,6 +2284,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-174", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-219", 0 ],
+					"source" : [ "obj-215", 0 ]
 				}
 
 			}
